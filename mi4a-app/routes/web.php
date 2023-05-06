@@ -46,18 +46,6 @@ Route::get('/jadwal', function(){
     //index => index.blade.php
 });
 
-<<<<<<< HEAD
-//Route::get('/fakultas',
-//function(){
-//   return view('fakultas.index')->with('fakultas', ["FIKR", "FEB"]);
-//});
+
 
 Route::resource('fakultas', FakultasController::class);
-
-=======
-Route::get('/fakulitas',
-function(){
-    return view('fakulitas.index')->with('fakulitas', ["FIKR", "FEB"]);
-});
->>>>>>> ca79522744c82a12ec36ceedb1ea70d462c3a028
-
