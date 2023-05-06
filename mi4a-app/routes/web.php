@@ -1,9 +1,9 @@
 <?php
 
-<<<<<<< HEAD
 use App\Http\Controllers\FakultasController;
-=======
->>>>>>> ca79522744c82a12ec36ceedb1ea70d462c3a028
+use App\Http\Controllers\ProdiController;
+use App\Http\Controllers\ProvinsiController;
+use App\Models\Provinsi;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,6 +46,15 @@ Route::get('/jadwal', function(){
     //index => index.blade.php
 });
 
-
+//route, view + data
+//Route::get('/fakultas', function(){
+ //   return view('fakultas.index')->with('fakultas', [
+ //       "FIKR", "FEB"
+ //   ]);
+//});
 
 Route::resource('fakultas', FakultasController::class);
+
+Route::resource('provinsi', ProvinsiController::class);
+
+Route::resource('prodi', ProdiController::class);
